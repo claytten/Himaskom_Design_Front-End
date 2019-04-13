@@ -11,6 +11,7 @@
     - Nav Menu Essentials
     - Nav Menu Container
     - Nav Menu Styling
+    - Nav Pagination
     - Mobile Nav Toggle
     - Mobile Nav Styling
     - Mobile Nav Body classes
@@ -37,8 +38,7 @@ body {
 }
 
 #main {
-  display:flex;
-  flex-wrap: wrap;
+  height: 100%;
 }
 
 a {
@@ -62,6 +62,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
+}
+
+.container {
+  max-width: 1280px;
 }
 
 /* Back to top button */
@@ -547,6 +551,12 @@ a:not([href]):not([tabindex]):hover {
   margin: 0;
 }
 
+/*Nav Pagination*/
+.page-link {
+  color: #616161;
+}
+
+
 /* Mobile Nav Toggle */
 #mobile-nav-toggle {
   position: fixed;
@@ -674,35 +684,42 @@ body.mobile-nav-active #mobile-nav-toggle {
   height: 349px;
 }
 .label {
-  padding:.35em .85em;
   margin-bottom:.5rem;
   font-size:.8125rem;
-  font-weight:600;
   line-height:1.1538;
   border-radius:2.5rem
 }
 
 .label {
   display:inline-block;
-  padding:0.5em 1em;
+  padding-bottom: 10px;
   font-size:100%;
-  font-weight:700;
   line-height:1;
-  color:#fff;
+  color:#616161;
   text-align:center;
   white-space:nowrap;
   vertical-align:baseline;
-  border-radius:.25rem
+  border-radius:.25rem;
+  letter-spacing:2px;
+  font-weight:300;
 }
+
+.label-bidang{
+  color:#616161;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.label-bidang:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 
 .label span {
   margin-right:.15rem;
   font-size:16px;
   vertical-align:text-top
-}
-
-.label-info {
-  background-color:#2b8be3
 }
 
 .post-section {
@@ -1031,7 +1048,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 #bidang {
   padding: 60px 0;
-  width: 80%;
+  width: 100%;
 }
 
 #bidang #bidang-flters {
@@ -1076,21 +1093,19 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #bidang .bidang-item {
   position: relative;
-  height: 360px;
   overflow: hidden;
+  margin-bottom: 20px;
 }
 
 #bidang .bidang-item figure {
-  background: #fff;
+  background: #616161;
   overflow: hidden;
   height: 240px;
   position: relative;
   border-radius: 4px 4px 0 0;
   margin: 0;
 }
-#bidang .bidang-item figure img {
-  padding-top: 40px;
-}
+
 #bidang .bidang-item figure:hover img {
   opacity: 0.4;
   transition: 0.3s;
@@ -1140,14 +1155,14 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #bidang .bidang-item figure:hover .link-details {
   visibility: visible;
-  right: calc(50% - 44px);
+  right: 45%
 }
 
 #bidang .bidang-item .bidang-info {
   background: #fff;
-  text-align: center;
+  text-align: left;
   padding: 30px;
-  height: 90px;
+  height: 20em;
   border-radius: 0 0 3px 3px;
 }
 
@@ -1173,7 +1188,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #b8b8b8;
   font-weight: 500;
   font-size: 14px;
-  text-transform: uppercase;
+  line-height: 1.65rem;
 }
 
 /* Clients Section
