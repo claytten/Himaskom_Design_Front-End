@@ -20,11 +20,11 @@ this web deploy on Netlify, so you guys can check this web in the built below.
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
+* [Dropwizard](https://himaskomfront-end.netlify.com/) - The web front-end
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+Please Contact me if you want to join me
 
 ## Versioning
 
