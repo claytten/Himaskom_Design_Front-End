@@ -6,14 +6,6 @@ This is prototype design website HIMASKOM
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-### Prerequisites
-
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
-
 ### Installing
 
 this web just html + css + javascript so you guys don't need more installation
@@ -44,9 +36,11 @@ Himaskom_Front_End Version 0.0.1
 	4. blog (done)
 	5. Latest_post (done)
 	6. responsive (not yet)
-	7. single_post (not yet)
+	7. single_post (done)
 	8. 404_page (not yet)
-	9. 
+	9. Prestasi_post (done)
+	10. Search (not yet)
+	11. Bidang_specify (not yet)
 
 ## Authors
 
