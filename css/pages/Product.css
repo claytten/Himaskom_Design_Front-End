@@ -1068,6 +1068,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-transform: uppercase;
 }
 
+.bidang-nav {
+  text-align: right;
+}
+
 /* Clients Section
 --------------------------------*/
 #clients {
