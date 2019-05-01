@@ -877,6 +877,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #about-facts {
   position: relative;
   width: 50%;
+  margin-top:40px;
 }
 
 #about-facts::before {
@@ -920,6 +921,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-align: center;
 }
 
+#about-facts .facts-img img {
+  height: 250px;
+}
 /* bidang Section
 --------------------------------*/
 #bidang {
