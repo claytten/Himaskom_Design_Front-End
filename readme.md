@@ -28,7 +28,7 @@ Please Contact me if you want to join me
 
 ## Versioning
 
-Himaskom_Front_End Version 0.0.1
+Himaskom_Front_End Version 0.1.3
 	Changelog:
 	1. landing page (done)
 	2. category (done)
@@ -41,6 +41,7 @@ Himaskom_Front_End Version 0.0.1
 	9. Prestasi_post (done)
 	10. Search (not yet)
 	11. Bidang_specify (not yet)
+	12. Add Beasiswa
 
 ## Authors
 
