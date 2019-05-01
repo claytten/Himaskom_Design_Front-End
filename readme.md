@@ -37,10 +37,10 @@ Himaskom_Front_End Version 0.1.3
 	5. Latest_post (done)
 	6. responsive (not yet)
 	7. single_post (done)
-	8. 404_page (not yet)
+	8. 404_page (done)
 	9. Prestasi_post (done)
 	10. Search (done)
-	11. Add Beasiswa
+	11. Add Beasiswa (done)
 
 ## Authors
 
