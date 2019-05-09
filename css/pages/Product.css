@@ -100,6 +100,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
   transition: all 0.5s;
   z-index: 997;
+  background: rgba(0, 0, 0, 0.9);
 }
 
 #header.header-scrolled {
@@ -924,6 +925,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 #bidang {
   padding: 60px 0;
+  padding-top:120px;
 }
 
 #bidang #bidang-flters {
@@ -1070,6 +1072,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .bidang-nav {
   text-align: right;
+}
+
+#bidang .pagination .page-item .page-link {
+  color: #8e8d8d;
 }
 
 /* Clients Section

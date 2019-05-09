@@ -100,6 +100,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
   transition: all 0.5s;
   z-index: 997;
+  background: rgba(0, 0, 0, 0.9);
 }
 
 #header.header-scrolled {
@@ -756,6 +757,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: url("../img/about-bg.jpg") center top no-repeat fixed;
   background-size: cover;
   width:100%;
+  padding-top:120px;
 }
 .center-header{
   display:flex;

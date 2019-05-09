@@ -1297,6 +1297,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 20px;
 }
 
+#bidang .bidang-image figure {
+  height: 400px;
+}
+
 #bidang .bidang-item figure {
   background: #616161;
   overflow: hidden;
@@ -1306,9 +1310,16 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin: 0;
 }
 
-#bidang .bidang-item figure:hover img {
+.container #bidang .bidang-image figure img {
+  height: 400px;
+  width:100%;
+}
+
+#bidang .bidang-item figure:hover img,
+#bidang .bidang-image figure:hover img {
   opacity: 0.4;
-  transition: 0.3s;
+  transition: 0.5s;
+  object-fit: cover;
 }
 
 #bidang .bidang-item figure .link-preview, #bidang .bidang-item figure .link-details {
@@ -1361,7 +1372,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #bidang .bidang-item .bidang-info {
   background: #fff;
   text-align: left;
-  padding: 30px;
+  padding: 40px;
   height: auto;
   border-radius: 0 0 3px 3px;
 }
@@ -1387,7 +1398,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin: 0;
   color: #616161;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.65rem;
   font-family: "Gotham Rounded A", "Gotham Rounded B", "Gotham Rounded", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-style:normal;
