@@ -28,8 +28,8 @@ Please Contact me if you want to join me
 
 ## Versioning
 
-Himaskom_Front_End Version 0.1.3
-	Changelog:
+Himaskom_Front_End Version 0.1.5
+	Pages:
 	1. landing page (done)
 	2. category (done)
 	3. category_page (done)
