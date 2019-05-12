@@ -116,7 +116,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 1024px) {
   #header #logo {
-    padding-left: 60px;
+    padding-left: 30px;
   }
 }
 
@@ -479,12 +479,6 @@ a:not([href]):not([tabindex]):hover {
 #nav-menu-container {
   float: right;
   margin: 0;
-}
-
-@media (min-width: 1024px) {
-  #nav-menu-container {
-    padding-right: 60px;
-  }
 }
 
 @media (max-width: 768px) {
@@ -923,6 +917,59 @@ body.mobile-nav-active #mobile-nav-toggle {
 .flex-kab {
   display:flex;
   flex-wrap:wrap;
+}
+
+@media (max-width: 425px) {
+  .flex-kab {
+    justify-content: center;
+  }
+
+  .bidang-image-kab .img-flud {
+    width: 200px;
+    height: 200px;
+  }
+
+  .bidang-text-kab {
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    padding-left: 20px;
+  }
+
+  .bidang-divisi ul {
+    justify-content: center;
+    padding-left:0;
+  }
+
+}
+
+@media (max-width: 768px) {
+  #category-layout .align-vertical {
+    height:auto;
+  }
+
+  .position-kab {
+    padding-right:0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .bidang-text-kab {
+    padding-right:0;
+    padding-left:0;
+  }
+
+  .bidang-text-kab p{
+    font-size:0.9rem;
+  }
+
+  #category-layout .align-vertical{
+    height:auto;
+  }
+
+  .position-kab {
+    padding-right:0;
+  }
 }
 
 /* About Us Section
@@ -1700,4 +1747,16 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-align: center;
   font-size: 13px;
   color: #ddd;
+}
+
+@media(max-width: 991px) {
+  #footer .footer-top .footer-info {
+    padding-left:15px !important;
+  }
+}
+
+@media(max-width: 1024px) {
+  #footer .footer-top .footer-info {
+    padding-left:0;
+  }
 }

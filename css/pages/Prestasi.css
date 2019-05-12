@@ -1204,6 +1204,24 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-align:left !important;
 }
 
+@media(max-width: 375px) {
+  #bidang .bidang-item .bidang-info {
+    height:22em;
+  }
+}
+
+@media(max-width: 462px) {
+  #bidang .container .section-header-layout {
+    height:16em !important;
+  }
+}
+
+@media(max-width: 810px) {
+  #bidang .container .section-header-layout {
+    height:14em;
+  }
+}
+
 /* Clients Section
 --------------------------------*/
 #clients {

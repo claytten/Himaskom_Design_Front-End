@@ -1193,6 +1193,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   line-height: 1.65rem;
 }
 
+@media(max-width: 375px) {
+  #bidang .bidang-item .bidang-info {
+    height:22em;
+  }
+}
+
 /* Clients Section
 --------------------------------*/
 #clients {

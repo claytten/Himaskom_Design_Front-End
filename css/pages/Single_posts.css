@@ -595,8 +595,6 @@ a:not([href]):not([tabindex]):hover {
 #posts-nav {
     padding: 0;
     list-style: none;
-    width: 75%;
-    position: relative;
     margin: 0;
     display: inline-block;
     min-height: 60px;
@@ -843,11 +841,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 
 #widgets {
-  width: 22%;
-  padding: 60px 0;
-  position: absolute;
-  right: 100px;
-  top: 260px;
+  margin-top:255px;
 }
 
 #widgets ul{
@@ -892,13 +886,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .widgets-input i {
-    position: absolute;
-    top: 9%;
-    right: 12%;
-    font-size: 20px;
-    color: #a0a0a0;
-    font-style: normal;
-    cursor: normal;
+  position: absolute;
+  right: 10%;
+  top: 14px;
+  font-size: 20px;
+  color: #a0a0a0;
+  font-style: normal;
+  cursor: pointer;
 }
 
 .widgets-section .widgets-content {
@@ -956,6 +950,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .widgets-section .social-media {
   display:flex;
   flex-wrap:wrap;
+  margin-left:10px;
 }
 
 .widgets-section .social-media li{
@@ -968,7 +963,15 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 25px;
 }
 
+@media(max-width: 991px) {
+  #widgets {
+    margin-top:10px;
+  }
 
+  .widgets-section .social-media li {
+    width: 5%;
+  }
+}
 
 
 
@@ -1235,7 +1238,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 #bidang {
   padding: 60px 0;
   padding-bottom: 20px;
-  width: 75%;
 }
 
 #bidang #bidang-flters {
@@ -1402,6 +1404,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   line-height: 1.65rem;
   font-family: "Gotham Rounded A", "Gotham Rounded B", "Gotham Rounded", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-style:normal;
+}
+
+.position-content {
+  justify-content: center;
 }
 
 /* Clients Section
@@ -1703,7 +1709,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Related Posts Section
 --------------------------------*/
 #related-posts {
-  width: 75%;
   padding-top:10px;
 }
 
@@ -1743,7 +1748,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Comment Posts Section
 --------------------------------*/
 #comment {
-  width: 75%;
   margin-bottom: 30px;
 }
 
@@ -1756,6 +1760,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .comment_area ul {
   list-style:none;
+  padding-left:15px;
 }
 
 .comment_area .section-heading h3 {
@@ -1775,6 +1780,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .comment_area .comment-content .comment-author img {
   border-radius: 50%; 
+}
+
+@media only screen and (max-width: 425px) {
+  .comment_area .comment-content .comment-author {
+    flex: none!important;
+  }
 }
 
 @media only screen and (max-width: 767px) {

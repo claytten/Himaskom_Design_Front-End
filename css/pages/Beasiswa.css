@@ -11,12 +11,14 @@
     - Nav Menu Essentials
     - Nav Menu Container
     - Nav Menu Styling
+    - Nav Pagination
     - Mobile Nav Toggle
     - Mobile Nav Styling
     - Mobile Nav Body classes
   5. Sections
-    - Section Header
-    - Section with background
+    - Sections Blog
+    - Sections Header
+    - Sections with background
     - featured Services Section
     - About Us Section
     - Call to Action Section
@@ -33,6 +35,10 @@ body {
   background: #fff;
   color: #666666;
   font-family: "Open Sans", sans-serif;
+}
+
+#main {
+  height: 100%;
 }
 
 a {
@@ -56,6 +62,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
+}
+
+.container {
+  max-width: 1280px;
 }
 
 /* Back to top button */
@@ -100,6 +110,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
   transition: all 0.5s;
   z-index: 997;
+  background: rgba(0, 0, 0, 0.9);
 }
 
 #header.header-scrolled {
@@ -541,6 +552,12 @@ a:not([href]):not([tabindex]):hover {
   margin: 0;
 }
 
+/*Nav Pagination*/
+.page-link {
+  color: #616161;
+}
+
+
 /* Mobile Nav Toggle */
 #mobile-nav-toggle {
   position: fixed;
@@ -662,6 +679,114 @@ body.mobile-nav-active #mobile-nav-toggle {
 /*--------------------------------------------------------------
 # Sections
 --------------------------------------------------------------*/
+/* Sections Blog
+--------------------------------*/
+.image-effect {
+  height: 349px;
+}
+.label {
+  margin-bottom:.5rem;
+  font-size:.8125rem;
+  line-height:1.1538;
+  border-radius:2.5rem
+}
+
+.label {
+  display:inline-block;
+  padding-bottom: 10px;
+  font-size:100%;
+  line-height:1;
+  color:#616161;
+  text-align:center;
+  white-space:nowrap;
+  vertical-align:baseline;
+  border-radius:.25rem;
+  letter-spacing:2px;
+  font-weight:300;
+}
+
+.label-bidang{
+  color:#616161;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.label-bidang:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+
+.label span {
+  margin-right:.15rem;
+  font-size:16px;
+  vertical-align:text-top
+}
+
+.post-section {
+  margin-bottom: 20px;
+}
+
+.arrow {
+  text-align: right;
+}
+
+.tags span {
+  color: #18d26e;
+  padding-left: 0;
+}
+
+.tags i {
+  padding-right: 5px;
+}
+
+.article-layout p{
+  margin: 0;
+}
+
+.article-layout h4{
+  margin: 0;
+}
+
+.article-layout h4 a{
+  color: #666666;
+}
+
+.article-layout h4 a:hover{
+  color: #18d26e;
+}
+
+
+#widgets {
+  width: 20%;
+  padding: 60px 0;
+}
+
+#widgets ul{
+  padding-left: 12px;
+}
+
+#widgets ul li{
+  list-style: none;
+}
+
+#widgets h3 {
+  border-left:4px solid #18d26e;
+  padding-left: 5px;
+}
+
+#widgets a {
+  color: #666666;
+}
+
+#widgets a:hover {
+  color: #18d26e;
+}
+
+.widgets-section {
+  margin-bottom: 30px;
+}
+
 /* Sections Header
 --------------------------------*/
 .section-header h3 {
@@ -924,6 +1049,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 #bidang {
   padding: 60px 0;
+  padding-top:120px;
+  width: 100%;
 }
 
 #bidang #bidang-flters {
@@ -968,21 +1095,19 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #bidang .bidang-item {
   position: relative;
-  height: 360px;
   overflow: hidden;
+  margin-bottom: 20px;
 }
 
 #bidang .bidang-item figure {
-  background: #fff;
+  background: #616161;
   overflow: hidden;
   height: 240px;
   position: relative;
   border-radius: 4px 4px 0 0;
   margin: 0;
 }
-#bidang .bidang-item figure img {
-  padding-top: 40px;
-}
+
 #bidang .bidang-item figure:hover img {
   opacity: 0.4;
   transition: 0.3s;
@@ -1032,15 +1157,22 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #bidang .bidang-item figure:hover .link-details {
   visibility: visible;
-  right: calc(50% - 44px);
+  right: 45%
 }
 
-#bidang .bidang-item .bidang-info {
+#bidang .bidang-item .bidang-info,
+#bidang .container .section-header-layout {
   background: #fff;
-  text-align: center;
+  text-align: left;
   padding: 30px;
-  height: 90px;
+  height: 20em;
   border-radius: 0 0 3px 3px;
+}
+
+#bidang .container .section-header-layout {
+  height: 9em;
+  padding: 10px;
+  margin-bottom:20px;
 }
 
 #bidang .bidang-item .bidang-info h4 {
@@ -1062,10 +1194,32 @@ body.mobile-nav-active #mobile-nav-toggle {
 #bidang .bidang-item .bidang-info p {
   padding: 0;
   margin: 0;
-  color: #b8b8b8;
+  color: #8e8d8d;
   font-weight: 500;
   font-size: 14px;
-  text-transform: uppercase;
+  line-height: 1.65rem;
+}
+
+#bidang .bidang-layout-filters {
+  text-align:left !important;
+}
+
+@media(max-width: 375px) {
+  #bidang .bidang-item .bidang-info {
+    height:22em;
+  }
+}
+
+@media(max-width: 462px) {
+  #bidang .container .section-header-layout {
+    height:16em !important;
+  }
+}
+
+@media(max-width: 810px) {
+  #bidang .container .section-header-layout {
+    height:14em;
+  }
 }
 
 /* Clients Section
