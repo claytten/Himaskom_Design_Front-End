@@ -781,7 +781,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #category-layout .align-vertical {
-  height:50%;
+  height:auto;
 }
 
 .center-header{
